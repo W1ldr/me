@@ -1,4 +1,44 @@
 baseURL = 'https://example.org/'
 theme="archie"
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'W1ldr'
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+[params]
+	mode="dark"
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/athul/archie)"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+  
+
+
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
